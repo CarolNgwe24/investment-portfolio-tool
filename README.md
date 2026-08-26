@@ -29,27 +29,6 @@ This version tracks shares held and cost basis per asset in chronological order,
 
 Three tables: `assets`, `market_prices`, `transactions` — see the SQL in this repo (or your own MySQL Workbench setup) for exact structure. Each transaction records a BUY or SELL with quantity, price per unit, and a transaction date, which the average-cost calculation depends on.
 
-## Setup
-
-1. Clone this repo
-2. Create a virtual environment and install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-3. Create a `.env` file in the project root (see `.env.example` if provided) with your database credentials:
-   ```
-   DB_HOST=localhost
-   DB_PORT=3306
-   DB_USER=your_username
-   DB_PASS=your_password
-   DB_NAME=portfolio_tracker
-   ```
-4. Set up the `assets`, `market_prices`, and `transactions` tables in MySQL and populate them with your data
-5. Run:
-   ```
-   python investment_portfolio_project.py
-   ```
-
 ## Notes
 
 - The USD-to-ZAR conversion rate is currently a hardcoded snapshot in the script — update it periodically, or swap in a live FX API call for ongoing accuracy.
