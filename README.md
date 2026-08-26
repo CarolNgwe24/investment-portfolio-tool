@@ -1,6 +1,6 @@
 # Investment Portfolio Tool
 
-A Python + MySQL tool that calculates real portfolio performance — cost basis, current value, profit/loss, and ROI — per asset and by asset class, converted to ZAR.
+A Python + MySQL tool that calculates real portfolio performance — cost basis, current value, profit/loss, and ROI — per asset and by asset class, in ZAR.
 
 ## What it does
 
